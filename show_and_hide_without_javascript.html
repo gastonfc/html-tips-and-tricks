@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    label {
+      display: block;
+      width: 200px;
+      padding: 10px;
+      background-color: #eee;
+    }
+    #cheqo {
+      visibility: hidden;
+      position: absolute;
+    }
+    .content {
+      height: 1.2em;
+      transition: all 0.5s ease-in-out;
+      overflow: hidden;
+    }
+    #cheqo:checked+.content {
+      height: 5em;
+    }
+  </style>
+</head>
+<body>
+<label for="cheqo">
+  <input id="cheqo" type="checkbox">
+  <div class="content">
+    Click here please<br>
+    Made without Javascript!<br>
+    Thanks for clicking!<br>
+  </div>
+</label>
+</body>
+</html>
